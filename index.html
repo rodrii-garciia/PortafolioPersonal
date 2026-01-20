@@ -1,109 +1,105 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <!--información útil para la página web-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- información útil para tener un buen SEO-->
     <meta name="description" content="Portafolio Personal de Rodrigo García">
     <meta name="keywords" content="portafolio, sobre mí, contacto, proyectos, CSS, HTML, programación">
     <meta name="author" content="Rodrigo García Sánchez">
 
-    <!--título de la página web-->
     <title>Portafolio Personal</title>
 
-    <!--se importa el archivo 'styles.css'-->
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="body">
-    <header class="header">
-        <h2 class="h2Header">Portafolio Personal de <span class="spanHeader"> Rodrigo García </span></h2>
-        <nav class="nav">
-            <a class="divInicio" href="#heroSection">
-                <img class="navImg" src="./img/header/inicio.png" alt="Inicio">
-                <p class="linksNav linksInicio" >Inicio</p>
-            </a>
+<body>
 
-            <a class="divSobreMi" href="#sobreMi">
-                <img class="navImg" src="./img/header/sobreMi.png" alt="Sobre Mí">
-                <a class="linksNav linksSobreMi" >Sobre Mí</a>
-            </a>
+<header class="header">
+    <h2 class="header-title">
+        Portafolio Personal de <span>Rodrigo García</span>
+    </h2>
 
-            <a class="divProyectos" href="#proyectos">
-                <img class="navImg" src="./img/header/proyectos.png" alt="Proyectos">
-                <p class="linksNav linksPortafolio">Proyectos</p>
-            </a>
+    <nav class="nav">
+        <a class="nav-item" href="#heroSection">
+            <img src="./img/header/inicio.png" alt="Inicio">
+            <span>Inicio</span>
+        </a>
 
-            <a class="divContacto" href="#contacto">
-                <img class="navImg" src="./img/header/contacto.png" alt="Contacto">
-                <p class="linksNav linksContacto">Contacto</p>
-            </a>
-        </nav>
-    </header>
+        <a class="nav-item" href="#sobreMi">
+            <img src="./img/header/sobreMi.png" alt="Sobre Mí">
+            <span>Sobre Mí</span>
+        </a>
 
-    <main class="main">
-        <!--por ver-->
-        <aside>
-        </aside>
+        <a class="nav-item" href="#proyectos">
+            <img src="./img/header/proyectos.png" alt="Proyectos">
+            <span>Proyectos</span>
+        </a>
 
-        <section class="mainContainer">
-            <div id="heroSection" class="heroSection">
-                <!--título principal de la página-->
-                <h1 class="h1">Bienvenidos al <span class="h1Span"> Portafolio Personal </span> de Rodrigo García</h1>
+        <a class="nav-item" href="#contacto">
+            <img src="./img/header/contacto.png" alt="Contacto">
+            <span>Contacto</span>
+        </a>
+    </nav>
+</header>
 
-                <!--lenguajes de programación-->
-                <h2 class="h2">Conocimiento en diversos lenguajes:</h2>
-                <div class="codeLanguage">
-                    <img class="heroSectionImg" src="./img/main/heroSection/java.png" alt="Lenguaje Java" width="150" height="100">
-                    <p class="codeLanguageText">Java es un lenguaje de programación orientado a objetos (POO) que se utiliza
-                        principalmente para desarrollo backend. Este el primer lenguaje de programación que aprendí y mi favorito. </p>
-                </div>
+<main class="main">
 
-                <div class="codeLanguage">
-                    <img class="heroSectionImg" src="./img/main/heroSection/html.png" alt="Lenguaje HTML" width="150" height="100">
-                    <p class="codeLanguageText">HTML es un lenguaje marcado que junto con CSS y JavaScript proporcionan un ecosistema
-                        clave para el desarrollo de aplicaciones web y páginas web. Gracias a HTML puedes ver este portfolio.</p>
-                </div>
+    <section id="heroSection" class="hero">
+        <h1>
+            Bienvenidos al <span>Portafolio Personal</span> de Rodrigo García
+        </h1>
 
-                <div class="codeLanguage">
-                    <img class="heroSectionImg" src="./img/main/heroSection/python.png" alt="Lenguaje Python" width="150" height="100">
-                    <p class="codeLanguageText">Python es un lenguaje muy versátil, normalmente se utiliza junto con herramientas
-                    de inteligencia artificial para 'Data Analysis' y scripts avanzados para la automatización de tareas. </p>
-                </div>
+        <h2>Conocimiento en diversos lenguajes:</h2>
 
-                <div class="codeLanguage">
-                    <img class="heroSectionImg" src="./img/main/heroSection/powershell.png" alt="Lenguaje Powershell" width="150" height="100">
-                    <p class="codeLanguageText">Powershell también es POO como Java pero este trabaja directamente con el sistema
-                    operativo de Windows lo que te da una gran libertad para controlar tu ordenador y sus funciones</p>
-                </div>
+        <article class="code-language">
+            <img src="./img/main/heroSection/java.png" alt="Lenguaje Java">
+            <p>Java es un lenguaje de programación orientado a objetos (POO) que se utiliza
+                principalmente para desarrollo backend. Este el primer lenguaje de programación que aprendí y mi favorito.</p>
+        </article>
 
+        <article class="code-language">
+            <img src="./img/main/heroSection/html.png" alt="Lenguaje HTML">
+            <p>HTML es un lenguaje marcado que junto con CSS y JavaScript proporcionan un ecosistema
+                clave para el desarrollo de aplicaciones web y páginas web. Gracias a HTML puedes ver este portfolio.</p>
+        </article>
 
-            </div>
+        <article class="code-language">
+            <img src="./img/main/heroSection/python.png" alt="Lenguaje Python">
+            <p>Python es un lenguaje muy versátil, normalmente se utiliza junto con herramientas
+                de inteligencia artificial para Data Analysis y scripts avanzados para la automatización de tareas.</p>
+        </article>
 
-            <div id="sobreMi" class="sobreMi">
-                <p>Este será el apartado 'Sobre Mí'</p>
-            </div>
+        <article class="code-language">
+            <img src="./img/main/heroSection/powershell.png" alt="Lenguaje Powershell">
+            <p>Powershell también es POO como Java pero este trabaja directamente con el sistema
+                operativo de Windows lo que te da una gran libertad para controlar tu ordenador y sus funciones.</p>
+        </article>
+    </section>
 
-            <div id="proyectos" class="proyectos">
-                <p>Este será el apartado 'Portafolio'</p>
-            </div>
+    <section id="sobreMi" class="section">
+        <p>Este será el apartado "Sobre Mí"</p>
+    </section>
 
-            <div id="contacto" class="contacto">
-                <p>Este será el apartado 'Contacto'</p>
-            </div>
-        </section>
-    </main>
+    <section id="proyectos" class="section">
+        <p>Este será el apartado "Portafolio"</p>
+    </section>
 
-    <footer class="footer">
-        <div class="footerSocialLinks">
+    <section id="contacto" class="section">
+        <p>Este será el apartado "Contacto"</p>
+    </section>
 
-            <a href="https://www.youtube.com/@rodriigo.garciia" target="_blank">
-                <img class="footerImg" src="./img/footer/youtube.png" alt="Link a Youtube" width="10" height="8">
-            </a>
-        </div>
-        <p class="footerCopyright">©2025 PortafolioPersonal Rodrigo García</p>
-    </footer>  
+</main>
+
+<footer class="footer">
+    <div class="footer-social">
+        <a href="https://www.youtube.com/@rodriigo.garciia" target="_blank">
+            <img src="./img/footer/youtube.png" alt="YouTube">
+        </a>
+    </div>
+
+    <p>©2025 PortafolioPersonal Rodrigo García</p>
+</footer>
+
 </body>
 </html>

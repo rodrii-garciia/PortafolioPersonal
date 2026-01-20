@@ -1,14 +1,4 @@
-/* ESTILOS DE LA PÁGINA WEB */
-    /* 1. Tipos de fuente */
-    /* 2. Variables */
-    /* 3. Estructura Principal */
-    /* 4. Header */
-    /* 5. Main */
-    /* 6. Footer */
-
-/* 1. Tipos de fuente */
-/* Inter Font */
-@font-face{
+@font-face {
     font-family: "Inter";
     src: url("./fonts/Inter/Inter-VariableFont_opsz,wght.ttf") format("woff2-variations");
     font-weight: 100 900;
@@ -16,7 +6,7 @@
     font-display: swap;
 }
 
-@font-face{
+@font-face {
     font-family: "Inter";
     src: url("./fonts/Inter/Inter-Italic-VariableFont_opsz,wght.ttf") format("woff2-variations");
     font-weight: 100 900;
@@ -24,8 +14,7 @@
     font-display: swap;
 }
 
-/* Roboto Font */
-@font-face{
+@font-face {
     font-family: "Roboto";
     src: url("./fonts/Roboto/Roboto-VariableFont_wdth,wght.ttf") format("woff2-variations");
     font-weight: 100 900;
@@ -33,7 +22,7 @@
     font-display: swap;
 }
 
-@font-face{
+@font-face {
     font-family: "Roboto";
     src: url("./fonts/Roboto/Roboto-Italic-VariableFont_wdth,wght.ttf") format("woff2-variations");
     font-weight: 100 900;
@@ -41,221 +30,133 @@
     font-display: swap;
 }
 
-/* 2. Variables */
-:root{
-    /* Fonts */
-    --default-font: "Inter";
-    --secondary-font: "Roboto";
-
-    --default-font-size: 16px;
-
-    /* Color */
-    --default-color: #e9ecf4;
-    --red-border: solid red 2px;
-
-    /* Margin */
-    --margin-none: 0;
-
-    /* Padding */
-    --padding-none: 0;
-
-    /* Medidas */
-    --max-width: 100%;
-    --max-height: 100%;
+:root {
+    --bg-main: #e9ecf4;
+    --accent: #4c64d4;
+    --accent-soft: #a0aeed;
 }
 
-
-/* 3. Estructura Principal */
-*{
-    margin: var(--margin-none);
-    padding: var(--padding-none);
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--bg-main);
     color: black;
-    background-color: var(--default-color);
-
     display: flex;
     flex-direction: column;
-
-    font-family: var(--default-font), sans-serif;
-    font-size: var(--default-font-size);
 }
 
-/* 4. Header */
-header{
+.header {
     position: sticky;
-    height: 10vh;
-
+    top: 0;
     display: flex;
     align-items: center;
-    padding-left: 5vh;
-
+    justify-content: space-between;
+    padding: 1rem 2rem;
     background: linear-gradient(to right, #4c64d4, #7dc2df, white);
-
-    border: var(--red-border);
 }
 
-.h2Header{
-    margin-right: 30vw;
+.header-title {
     font-weight: 500;
     color: white;
-    border: var(--red-border);
 }
 
-.spanHeader{
+.header-title span {
     font-weight: 700;
 }
 
-nav{
-    border: var(--red-border);
+.nav {
     display: flex;
-    height: 10vh;
+    gap: 1rem;
 }
 
-.divInicio{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 8vw;
-    border: var(--red-border);
-}
-
-.divInicio:hover {
-    background-color: #a0aeed;
-}
-
-.divSobreMi{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 8vw;
-    border: var(--red-border);
-}
-
-.divProyectos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 8vw;
-    border: var(--red-border);
-}
-
-.divContacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 8vw;
-    border: var(--red-border);
-}
-
-.navImg{
-    width: 4vh;
-    height: 4vh;
-    margin-bottom: 1vh;
-}
-
-.linksNav{
-    border: var(--red-border);
-    display: inline-flex;
-    align-items: center;
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    color: black;
+.nav-item {
     text-decoration: none;
-    height: 2.5vh;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5.5rem;
+    padding: 0.5rem;
+    transition: background-color 0.2s ease;
 }
 
-.linkInicio{
-
+.nav-item:hover {
+    background-color: var(--accent-soft);
 }
 
-.linkSobreMi{
-
+.nav-item img {
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.3rem;
 }
 
-.linkProyectos{
-
+.nav-item span {
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
-.linkContacto{
-
+.main {
+    width: 100%;
 }
 
-
-
-/* 5. Main */
-main{
-    max-width: var(--max-width);
+.hero {
+    padding: 2rem;
 }
 
-.mainContainer{
-    max-width: var(--max-width);
+.hero h1 span {
+    font-weight: 700;
 }
 
-h1{
-    max-width: var(--max-width);
- }
-
-.h1Span{
-
+.hero h2 {
+    margin: 1rem 0;
 }
 
-h2{
-    max-width: var(--max-width);
+.code-language {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
-.heroSection{
-    max-width: var(--max-width);
+.code-language img {
+    width: clamp(4rem, 10vw, 6rem);
 }
 
-.codeLanguage{
-    max-width: var(--max-width);
-
+.section {
+    padding: 2rem;
 }
 
-.codeLanguageText{
-
+.footer {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #4c64d4, #7dc2df, white);
 }
 
-.heroSectionImg{
-    aspect-ratio: auto;
-    max-width: 10vw;
-    width: 10vw;
+.footer-social img {
+    width: 1.5rem;
 }
 
-.sobreMi{
-    max-width: var(--max-width);
-}
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 1rem;
+    }
 
-.proyectos{
-    max-width: var(--max-width);
-}
+    .nav {
+        width: 100%;
+        justify-content: space-around;
+    }
 
-.contacto{
-    max-width: var(--max-width);
-}
-
-/* 6. Footer */
-footer{
-    height: 10vh;
-    max-width: var(--max-width);
-    border: var(--red-border);
-}
-
-.footerSocialLinks{
-
-}
-
-.footerImg{
-
-}
-
-.footerCopyright{
-
+    .code-language {
+        flex-direction: column;
+        text-align: center;
+    }
 }
