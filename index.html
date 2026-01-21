@@ -22,22 +22,22 @@
 
     <nav class="nav">
         <a class="nav-item" href="#heroSection">
-            <img src="./img/header/inicio.png" alt="Inicio">
+            <img src="./img/header/inicio.png" alt="Inicio" title="Ir a 'Inicio'">
             <span>Inicio</span>
         </a>
 
         <a class="nav-item" href="#sobreMi">
-            <img src="./img/header/sobreMi.png" alt="Sobre Mí">
+            <img src="./img/header/sobreMi.png" alt="Sobre Mí" title="Ir a 'Sobre Mí'">
             <span>Sobre Mí</span>
         </a>
 
         <a class="nav-item" href="#proyectos">
-            <img src="./img/header/proyectos.png" alt="Proyectos">
+            <img src="./img/header/proyectos.png" alt="Proyectos" title="Ir a 'Proyectos'">
             <span>Proyectos</span>
         </a>
 
         <a class="nav-item" href="#contacto">
-            <img src="./img/header/contacto.png" alt="Contacto">
+            <img src="./img/header/contacto.png" alt="Contacto" title="Ir a 'Contacto'">
             <span>Contacto</span>
         </a>
     </nav>
@@ -46,9 +46,15 @@
 <main class="main">
 
     <section id="heroSection" class="hero">
-        <h1>
-            Bienvenidos al <span>Portafolio Personal</span> de Rodrigo García
-        </h1>
+        <div class="divHeroSection">
+            <h1>
+                Bienvenidos al <span class="hero-h1-span1"> Portafolio </span> <span class="hero-h1-span2"> Personal </span> de Rodrigo García
+            </h1>
+
+            <a class="heroImage" href="#proyectos">
+                <img src="./img/main/heroSection/code.png" alt="Imagen de código" title="Ir a 'Proyectos'">
+            </a>
+        </div>
 
         <h2>Conocimiento en diversos lenguajes:</h2>
 
@@ -92,14 +98,27 @@
 </main>
 
 <footer class="footer">
-    <div class="footer-social">
-        <a href="https://www.youtube.com/@rodriigo.garciia" target="_blank">
-            <img src="./img/footer/youtube.png" alt="YouTube">
-        </a>
-    </div>
+    <section class="sectionSocial">
+        <div class="footer-social">
+            <a href="https://www.youtube.com/@rodriigo.garciia" target="_blank">
+                <img src="./img/footer/youtube.png" alt="YouTube">
+            </a>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://www.instagram.com/rodriigo__garciia/" target="_blank">
+                <img src="./img/footer/instagram.png" alt="Instagram">
+            </a>
+        </div>
+
+        <div class="footer-social">
+            <a href="https://github.com/rodrii-garciia" target="_blank">
+                <img src="./img/footer/github.png" alt="Github">
+            </a>
+        </div>
+    </section>
 
     <p>©2025 PortafolioPersonal Rodrigo García</p>
 </footer>
-
 </body>
 </html>
